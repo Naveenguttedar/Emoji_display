@@ -1,25 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Comic+Neue:wght@400;700&family=Indie+Flower&display=swap');
 *{
   margin: 0;padding: 0;
   box-sizing: border-box;
 }
-.container{
-  padding: 10px 90px;
+body{
+  height: 100%;
+  padding: 0px 50px;
+  background-color: #262626;
+  color: white;
+  font-family:'Comic Neue' , cursive;
 }
+
 .search_emoji{
+  width: 100%;
   text-align: center;
   margin: 0 auto;
+  position: fixed;
+  background-color: #262626;
 }
 #serach_emoji_input{
+  background-color: #2D2E30;
+  color: white;
+  border: none;
+  border-radius: 5px;
   padding: 4px 8px;
-  width: 200px;
-  height: 25px;
+  margin: 10px 0px;
+  width: 400px;
+  height: 35px;
   font-size: 18px;
 }
+#btn_search{
+  background-color: #2D2E30;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 35px;
+  border-radius: 5px;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
 #emoji_container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1rem;
+  display: grid;
+  padding: 30px 0;
+  grid-template-columns: repeat(6,1fr);
 }
 .emoji_card{
   width: 200px;
@@ -41,4 +64,5 @@
 }
 .description{
   font-size: 15px;
+  color: gray;
 }
